@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Rounded App Icon Background -->
+  <rect width="512" height="512" rx="128" fill="#FFFDF9"/>
+  <rect width="512" height="512" rx="128" fill="url(#bg-gradient)" opacity="0.3"/>
+
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#FAF6F0"/>
+      <stop offset="100%" stopColor="#EFE7DA"/>
+    </linearGradient>
+
+    <linearGradient id="trama-orange" x1="100" y1="120" x2="420" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#F28E2B" />
+      <stop offset="100%" stopColor="#E06830" />
+    </linearGradient>
+
+    <linearGradient id="trama-blue" x1="100" y1="160" x2="320" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#76B7B2" />
+      <stop offset="100%" stopColor="#4E79A7" />
+    </linearGradient>
+
+    <linearGradient id="trama-yellow" x1="160" y1="120" x2="320" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#EDC948" />
+      <stop offset="100%" stopColor="#E5A638" />
+    </linearGradient>
+
+    <linearGradient id="trama-green" x1="120" y1="180" x2="280" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#87BBA2" />
+      <stop offset="100%" stopColor="#5F8D76" />
+    </linearGradient>
+
+    <linearGradient id="trama-purple" x1="280" y1="120" x2="400" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#9C755F" />
+      <stop offset="100%" stopColor="#724E68" />
+    </linearGradient>
+
+    <filter id="icon-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" floodOpacity="0.15" />
+    </filter>
+  </defs>
+
+  <g transform="translate(24, 8) scale(2.9)" filter="url(#icon-shadow)">
+    <!-- Cord 1: Green -->
+    <path d="M 32 60 C 50 60 62 70 66 122" stroke="url(#trama-green)" stroke-width="13" stroke-linecap="round"/>
+    <!-- Cord 2: Blue -->
+    <path d="M 32 44 C 70 44 72 80 76 126" stroke="url(#trama-blue)" stroke-width="13" stroke-linecap="round"/>
+    <!-- Cord 3: Orange -->
+    <path d="M 38 28 C 80 28 84 66 86 128" stroke="url(#trama-orange)" stroke-width="13" stroke-linecap="round"/>
+    <!-- Cord 4: Yellow -->
+    <path d="M 124 44 C 88 44 86 80 82 126" stroke="url(#trama-yellow)" stroke-width="13" stroke-linecap="round"/>
+    <!-- Cord 5: Purple -->
+    <path d="M 124 58 C 104 58 98 78 94 122" stroke="url(#trama-purple)" stroke-width="13" stroke-linecap="round"/>
+
+    <!-- Over-under weave overlays -->
+    <path d="M 68 36 C 75 42 78 52 80 64" stroke="url(#trama-orange)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M 72 82 C 74 96 75 110 76 124" stroke="url(#trama-blue)" stroke-width="13" stroke-linecap="round"/>
+    <path d="M 94 40 C 90 48 86 58 84 70" stroke="url(#trama-yellow)" stroke-width="13" stroke-linecap="round"/>
+  </g>
+
+  <!-- Typography TRAMA under the letter -->
+  <text x="256" y="440" font-family="'Nunito', sans-serif" font-weight="900" font-size="52" fill="#2C2724" text-anchor="middle" letter-spacing="4">TRAMA</text>
+</svg>

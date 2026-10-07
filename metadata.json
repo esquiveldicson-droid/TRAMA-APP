@@ -1,0 +1,6 @@
+{
+  "name": "Familia Hub",
+  "description": "Red social privada exclusiva para la familia con tesoro familiar, calendario, estados diarios e IA nostálgica con Gemini",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

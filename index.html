@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Trama App - Red Familiar Privada</title>
+    <meta name="description" content="Trama App - Red social privada exclusiva para la familia con tesoro familiar, calendario, estados diarios e IA nostálgica" />
+    <meta property="og:title" content="Trama App - Red Familiar Privada" />
+    <meta property="og:description" content="Trama App - Red social privada exclusiva para la familia con tesoro familiar, calendario, estados diarios e IA nostálgica" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <meta name="theme-color" content="#FAF6F0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(reg) {
+            console.log('SW activo:', reg.scope);
+          }).catch(function(err) {
+            console.warn('SW error:', err);
+          });
+        });
+      }
+    </script>
+  </head>
+  <body class="font-['Nunito',sans-serif] antialiased selection:bg-[var(--theme-primary-soft)] selection:text-[var(--theme-primary)]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
